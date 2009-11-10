@@ -5,7 +5,7 @@
  * Description: Allow users to post source codes in comments using [code][/code] tag. No syntax highlight at the moment, it just replaces the special characters.
  * Author: Zen
  * Author URI: http://zenverse.net/
- * Version: 1.0
+ * Version: 1.0.1
 */
 
 $zv_scic_plugin_name = 'Source Codes in Comments';
