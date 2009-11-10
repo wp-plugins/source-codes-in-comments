@@ -82,7 +82,7 @@ return '<div class="cic_codes_div">'.htmlspecialchars($content).'</div>';
 
 function scic_cform_addon() {
 global $zv_scic_plugin_formmsg,$scic_options;
-if (!empty($scic_options)) { echo $scic_options['msg']; } else { echo $zv_scic_plugin_formmsg; }
+if (!empty($scic_options)) { echo stripslashes($scic_options['msg']); } else { echo $zv_scic_plugin_formmsg; }
 }
 
 function scic_wphead() {
