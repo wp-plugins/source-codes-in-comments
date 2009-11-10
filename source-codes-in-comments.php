@@ -12,7 +12,7 @@ $zv_scic_plugin_name = 'Source Codes in Comments';
 $zv_scic_plugin_dir = WP_CONTENT_URL.'/plugins/source-codes-in-comments/';
 $zv_scic_plugin_ver = '1.0.2';
 $zv_scic_plugin_url = 'http://zenverse.net/source-codes-in-comments-plugin/';
-$zv_scic_plugin_formmsg = 'Please wrap all source codes with [code][/code] tags.';
+$zv_scic_plugin_formmsg = 'Please wrap all source codes with [code][/code] tags. Powered by <a href="http://zenverse.net/source-codes-in-comments-plugin/">Source Codes in Comments</a>.';
 
 $scic_options = get_option('scic_options');
 
