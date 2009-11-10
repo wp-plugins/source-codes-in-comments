@@ -38,5 +38,9 @@ The DIV that contains the codes has CSS class &quot;`cic_codes_div`&quot;. Style
 2. Comment form
 
 == Changelog ==
+= 1.0.1 =
+* Added stripslashes to input area
+* Updated the link to plugin support
+
 = 1.0 =
 * First version of Source Codes in Comments

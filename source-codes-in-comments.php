@@ -10,7 +10,7 @@
 
 $zv_scic_plugin_name = 'Source Codes in Comments';
 $zv_scic_plugin_dir = WP_CONTENT_URL.'/plugins/source-codes-in-comments/';
-$zv_scic_plugin_ver = '1.0';
+$zv_scic_plugin_ver = '1.0.1';
 $zv_scic_plugin_url = 'http://zenverse.net/source-codes-in-comments-plugin/';
 $zv_scic_plugin_formmsg = 'Please wrap all source codes with [code][/code] tags.';
 
@@ -169,7 +169,7 @@ $scic_options = get_option('scic_options');
 
 <div class="scic_oneoptionblock">
 <strong>Plugin Message</strong>
-<input type="text" name="scic_form_msg" value="<?php if (!empty($scic_options)) { echo $scic_options['msg']; } else { echo $zv_scic_plugin_formmsg; } ?>" style="padding:3px;border:1px solid #cccccc" size="70" />
+<input type="text" name="scic_form_msg" value="<?php if (!empty($scic_options)) { echo stripslashes($scic_options['msg']); } else { echo $zv_scic_plugin_formmsg; } ?>" style="padding:3px;border:1px solid #cccccc" size="70" />
 <br /><small>This message will be shown after comment form, if enabled.</small>
 </div>
 
@@ -194,7 +194,7 @@ $scic_options = get_option('scic_options');
 <span class="scic_maintitle">Plugin Support & Extra</span><br /><br />
 
 <b>General Message</b><br />
-If you have problem when using this plugin, please report it to me at <a href="<?php echo $zv_scic_plugin_url; ?>#respond" target="_blank">here</a>, I will then look into the matter as soon as possible.<br /><br />
+If you have problem when using this plugin, please report it to me at <a href="http://forums.zenverse.net/viewforum.php?f=9" target="_blank">plugin support forum</a>, I will then look into the matter as soon as possible.<br /><br />
 
 <b>Author's Message</b><br />
 Please don't forget to <a href="http://zenverse.net/support/">donate via PayPal</a> if you found this plugin useful to ensure continued development.
@@ -205,8 +205,8 @@ Please don't forget to <a href="http://zenverse.net/support/">donate via PayPal<
 <hr style="border:0px;height:1px;font-size:1px;margin-bottom:5px;background:#dddddd;color:#dddddd" />
 <small style="color:#999999">
 My other works : <a target="_blank" href="http://zenverse.net/category/wordpress-plugins/">Wordpress Plugins</a> 
-&nbsp; | &nbsp; <a target="_blank" href="http://zenverse.net/category/wpthemes/">Free Wordpress Themes</a> 
-&nbsp; | &nbsp; <a target="_blank" href="http://zenverse.net/category/paid-wp-themes/">Premium Wordpress Themes</a>
+&nbsp; | &nbsp; <a target="_blank" href="http://zenverse.net/category/wpthemes/free-wp-themes/">Free Wordpress Themes</a> 
+&nbsp; | &nbsp; <a target="_blank" href="http://themes.zenverse.net/">Premium Wordpress Themes</a>
 &nbsp; | &nbsp; Thank you for using my plugin.
 </small>
 
