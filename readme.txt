@@ -4,7 +4,7 @@ Donate link: http://zenverse.net/support/
 Tags: source,codes,comment
 Requires at least: 2.5
 Tested up to: 2.8.4
-Stable tag: 1.0
+Stable tag: 1.0.2
 
 Allow users to post source codes in comments using [code][/code] tag. No syntax highlight at the moment, it just replaces the special characters.
 
@@ -38,6 +38,9 @@ The DIV that contains the codes has CSS class &quot;`cic_codes_div`&quot;. Style
 2. Comment form
 
 == Changelog ==
+= 1.0.2 =
+* Added str_replace to the stripslashes so that "plugin message" field works with double quotes
+
 = 1.0.1 =
 * Added stripslashes to input area
 * Updated the link to plugin support

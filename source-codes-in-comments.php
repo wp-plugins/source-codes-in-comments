@@ -5,12 +5,12 @@
  * Description: Allow users to post source codes in comments using [code][/code] tag. No syntax highlight at the moment, it just replaces the special characters.
  * Author: Zen
  * Author URI: http://zenverse.net/
- * Version: 1.0.1
+ * Version: 1.0.2
 */
 
 $zv_scic_plugin_name = 'Source Codes in Comments';
 $zv_scic_plugin_dir = WP_CONTENT_URL.'/plugins/source-codes-in-comments/';
-$zv_scic_plugin_ver = '1.0.1';
+$zv_scic_plugin_ver = '1.0.2';
 $zv_scic_plugin_url = 'http://zenverse.net/source-codes-in-comments-plugin/';
 $zv_scic_plugin_formmsg = 'Please wrap all source codes with [code][/code] tags.';
 
@@ -169,7 +169,7 @@ $scic_options = get_option('scic_options');
 
 <div class="scic_oneoptionblock">
 <strong>Plugin Message</strong>
-<input type="text" name="scic_form_msg" value="<?php if (!empty($scic_options)) { echo stripslashes($scic_options['msg']); } else { echo $zv_scic_plugin_formmsg; } ?>" style="padding:3px;border:1px solid #cccccc" size="70" />
+<input type="text" name="scic_form_msg" value="<?php if (!empty($scic_options)) { echo str_replace('"','&quot;',stripslashes($scic_options['msg'])); } else { echo $zv_scic_plugin_formmsg; } ?>" style="padding:3px;border:1px solid #cccccc" size="70" />
 <br /><small>This message will be shown after comment form, if enabled.</small>
 </div>
 
